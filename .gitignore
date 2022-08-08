@@ -1,0 +1,5 @@
+/build
+/esp_idf_components
+/.settings
+.project
+.cproject
