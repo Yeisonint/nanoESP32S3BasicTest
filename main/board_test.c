@@ -60,7 +60,7 @@ void sdcardTest(void){
     // This initializes the slot without card detect (CD) and write protect (WP) signals.
     // Modify slot_config.gpio_cd and slot_config.gpio_wp if your board has these signals.
     sdspi_device_config_t slot_config = SDSPI_DEVICE_CONFIG_DEFAULT();
-    slot_config.gpio_cs = 9;
+    slot_config.gpio_cs = SD_D3;
     slot_config.host_id = host.slot;
 
     ESP_LOGI(TAG, "Mounting filesystem");
